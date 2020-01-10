@@ -8,16 +8,40 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Facebook SDK
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+//        [[FBSDKApplicationDelegate sharedInstance] application:application
+//            didFinishLaunchingWithOptions:launchOptions];
+        
+        
+        FirebaseApp.configure()
+        window = UIWindow(frame:  UIScreen.main.bounds)
+        // This view controlle will always be the first in the stack and last to pop
+        let logIn = LogInViewController()
+        logIn.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        //window?.rootViewController = viewController
+        let navigator = UINavigationController(rootViewController: logIn)
+        navigator.setNavigationBarHidden(true, animated: false)
+        // Temp push .. login should be the first view controller to be pushed
+        window?.rootViewController = navigator
+        window?.makeKeyAndVisible()
         return true
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let handle = ApplicationDelegate.shared.application(app, open: url, sourceApplication: (options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String), annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+        return handle
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
