@@ -47,7 +47,6 @@
 		41A35B222323137F008BA6E4 /* CreateFiveQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A35B212323137F008BA6E4 /* CreateFiveQuestionViewController.swift */; };
 		41A35B24232316A3008BA6E4 /* MultipleChoiceQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A35B23232316A3008BA6E4 /* MultipleChoiceQuestionView.swift */; };
 		41A35B2A2326C4D7008BA6E4 /* EnableNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A35B292326C4D7008BA6E4 /* EnableNotificationsViewController.swift */; };
-		41F7EC74232C9F14003B43DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7EC73232C9F14003B43DB /* ViewController.swift */; };
 		773A6BDA2444ACB6DC399209 /* Pods_RightMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2156DD62569DC7F18EB7F3 /* Pods_RightMatch.framework */; };
 		798913DA5C4BDB24A4EAED30 /* Pods_RightMatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA28DD98DCDFCAED2404A2C /* Pods_RightMatchTests.framework */; };
 /* End PBXBuildFile section */
@@ -116,7 +115,6 @@
 		41A35B212323137F008BA6E4 /* CreateFiveQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFiveQuestionViewController.swift; sourceTree = "<group>"; };
 		41A35B23232316A3008BA6E4 /* MultipleChoiceQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceQuestionView.swift; sourceTree = "<group>"; };
 		41A35B292326C4D7008BA6E4 /* EnableNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableNotificationsViewController.swift; sourceTree = "<group>"; };
-		41F7EC73232C9F14003B43DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D74C36D885F02935982818D /* Pods-RightMatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RightMatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-RightMatchUITests/Pods-RightMatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BA3E992A3B78D190E167FD2 /* Pods-RightMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RightMatch.release.xcconfig"; path = "Target Support Files/Pods-RightMatch/Pods-RightMatch.release.xcconfig"; sourceTree = "<group>"; };
 		5E2156DD62569DC7F18EB7F3 /* Pods_RightMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RightMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,7 +248,6 @@
 				41A35B1F23231021008BA6E4 /* RuleViewController.swift */,
 				41A35B212323137F008BA6E4 /* CreateFiveQuestionViewController.swift */,
 				41A35B292326C4D7008BA6E4 /* EnableNotificationsViewController.swift */,
-				41F7EC73232C9F14003B43DB /* ViewController.swift */,
 				4111FE65232E18200024A065 /* PictureGalleryViewController.swift */,
 				4179658A2340F9B10059DDE6 /* TempViewController.swift */,
 			);
@@ -565,7 +562,6 @@
 				41A35B18231F639B008BA6E4 /* RegisterLocationViewController.swift in Sources */,
 				4111FE64232DCE2E0024A065 /* QuestionModel.swift in Sources */,
 				41796584233E517F0059DDE6 /* URLS.swift in Sources */,
-				41F7EC74232C9F14003B43DB /* ViewController.swift in Sources */,
 				4154888E230DC75B00B9E842 /* CustomFacebook.swift in Sources */,
 				415488922310B85D00B9E842 /* RegisterEducationViewController.swift in Sources */,
 				4111FE62232DCC8A0024A065 /* FiveQuestionModel.swift in Sources */,
